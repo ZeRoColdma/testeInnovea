@@ -1,9 +1,17 @@
-Para concluir o seu processo de Homologação:
+Instruçoes para Iniciar o projeto.
 
-1) Construa uma aplicação utilizando a linguagem e frameworks da vaga concorrida. Essa aplicação deve consumir a API https://newsapi.org/ e exibir a lista de artigos com informações de autores, título e descrição.
+## Instalação
 
-2) Disponibilize de forma pública no repositório de sua preferência.
+utilize o gerenciacador de pacotes [npm](https://www.npmjs.com/) para instalar as dependencias. Ou o da sua preferencia, yarn ou pnpm.
 
-3) Preencha o formulário abaixo com o link da aplicação criada no Git e os seus dados.
+A utilização do Banco de dados é local com o SQLite3, então não é necessario instalar nada ou iniciar as migrations.
 
-Em caso de dúvidas encaminhe email para homologacao@innovea.com.br
+iniciar o projeto com o comando:
+
+npm run start:dev
+
+ou
+
+yarn start:dev
+
+
