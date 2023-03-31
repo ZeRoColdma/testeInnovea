@@ -12,6 +12,6 @@ export class AppController {
 
   @Get('notices')
   async getNotices(): Promise<any> {
-    return await this.appService.notices();
+    return await this.appService.getNotices();
   }
 }

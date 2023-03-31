@@ -29,4 +29,8 @@ export class AppService {
 
     return notices;
   }
+
+  async getNotices(): Promise<any> {
+    return await this.prisma.notice.findMany();
+  }
 }

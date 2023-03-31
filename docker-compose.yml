@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  database_notification:
+    image: postgres
+    container_name: notices
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=notices
+    volumes:
+      - pgdata:/data/postgresql
+
+volumes:
+  pgdata:
+    driver: local
